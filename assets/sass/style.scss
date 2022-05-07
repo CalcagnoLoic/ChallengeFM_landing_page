@@ -1,0 +1,150 @@
+/*Mixins*/
+@mixin style_button($color, $color_shadow) {
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    color: white;
+    background-color: $color;
+    border-color: $color;
+    font-size: 14px;
+    &:hover{
+        cursor: pointer;
+        box-shadow: $color_shadow;
+        transform: scale(1.1);
+    }
+}
+@mixin button {
+    padding-bottom: 5%;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    .btn1{
+        @include style_button($color_cyan_strong, $color_cyan_strong);
+    }
+    .btn2{
+        @include style_button($color_light_blue, $color_light_blue);
+    }
+}
+@mixin p_color {
+    color: $grayish;
+}
+@mixin h_color {
+    color: $dark_grayish;
+}
+
+/*Media query*/
+@media (max-width:650px) {
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+}
+@media (min-width:650px) {
+    .button {
+        display: flex;
+        gap: 8%;
+    }
+    main {
+        .section1 {
+            p {
+                padding-left: 22%;
+                padding-right: 22%;
+            }
+        }
+    }
+    
+}
+
+/*Styles of website*/
+@font-face {
+    font-family: BaiJamjuree;
+    src: url(../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+html{
+    font-family: "BaiJamjuree";
+}
+body{
+    margin: 0;
+}
+$color_cyan_strong:hsl(171, 66%, 44%);
+$color_light_blue:hsl(233, 100%, 69%);
+$dark_grayish:hsl(210, 10%, 33%);
+$grayish:hsl(201, 11%, 66%);
+
+/*Styles of header*/
+header{
+    .baneer{
+        background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)),url(../img/bg-header-desktop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 3.5em;
+        padding-bottom: 3.5em;
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+    }
+    .header{
+        text-align: center;
+        margin-top: -50px;
+        h1{
+            @include h_color;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        p {
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 3%;
+            @include p_color;
+        }
+        .button {
+            @include button;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+/*Styles for section1*/
+.section1{
+    h2, p {
+        text-align: center;
+    }
+    p {
+        @include p_color;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 15px
+    }
+    h2 {
+        @include h_color;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    padding-bottom: 100px;
+}
+
+/*Styles liés à la section 2*/
+.section2{
+    padding-bottom: 100px;
+    div {
+        .img {
+            width: 15px;
+            padding-bottom: 25px;
+        } 
+        .infos {
+            text-align: center;
+            h3 {
+                @include h_color;
+            }
+            p {
+                @include p_color;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 25px;
+            }
+        }
+    }
+}

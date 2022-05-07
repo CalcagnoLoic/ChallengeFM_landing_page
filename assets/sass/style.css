@@ -1,1 +1,168 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*Mixins*/
+/*Media query*/
+@media (max-width: 650px) {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 650px) {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8%;
+  }
+  main .section1 p {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+}
+
+/*Styles of website*/
+@font-face {
+  font-family: BaiJamjuree;
+  src: url(../fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf);
+}
+
+html {
+  font-family: "BaiJamjuree";
+}
+
+body {
+  margin: 0;
+}
+
+/*Styles of header*/
+header .baneer {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white)), url(../img/bg-header-desktop.png);
+  background: linear-gradient(to bottom, transparent, white), url(../img/bg-header-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+header .baneer img {
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+header .header {
+  text-align: center;
+  margin-top: -50px;
+}
+
+header .header h1 {
+  color: #4c545d;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+header .header p {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 3%;
+  color: #9fabb2;
+}
+
+header .header .button {
+  padding-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 100px;
+}
+
+header .header .button .btn1 {
+  border-radius: 20px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  background-color: #26baa4;
+  border-color: #26baa4;
+  font-size: 14px;
+}
+
+header .header .button .btn1:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #26baa4;
+          box-shadow: #26baa4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header .header .button .btn2 {
+  border-radius: 20px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  background-color: #6173ff;
+  border-color: #6173ff;
+  font-size: 14px;
+}
+
+header .header .button .btn2:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #6173ff;
+          box-shadow: #6173ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*Styles for section1*/
+.section1 {
+  padding-bottom: 100px;
+}
+
+.section1 h2, .section1 p {
+  text-align: center;
+}
+
+.section1 p {
+  color: #9fabb2;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 15px;
+}
+
+.section1 h2 {
+  color: #4c545d;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*Styles liés à la section 2*/
+.section2 {
+  padding-bottom: 100px;
+}
+
+.section2 div .img {
+  width: 15px;
+  padding-bottom: 25px;
+}
+
+.section2 div .infos {
+  text-align: center;
+}
+
+.section2 div .infos h3 {
+  color: #4c545d;
+}
+
+.section2 div .infos p {
+  color: #9fabb2;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 25px;
+}
+/*# sourceMappingURL=style.css.map */
