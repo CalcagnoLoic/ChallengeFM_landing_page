@@ -25,6 +25,66 @@
     padding-left: 22%;
     padding-right: 22%;
   }
+  main .section2 .m-pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .section2 .m-pc img {
+    width: 50%;
+  }
+  main .section2 .m-pc h3 {
+    text-align: start;
+    padding-left: 10%;
+  }
+  main .section2 .m-pc p {
+    text-align: left;
+  }
+  main .section3 img {
+    width: 65%;
+    margin-top: 50px;
+  }
+  main .section5 .info-section5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    padding-left: 5%;
+    padding-right: 10%;
+  }
+  main .section5 .info-section5 p {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  main .section6 .logo .logo1 {
+    width: 180px;
+  }
+  main .section6 .logo .logo2 {
+    width: 150px;
+    height: 40px;
+  }
+  main .section6 .logo .logo3 {
+    width: 150px;
+    height: 40px;
+  }
+  main .section6 .logo .logo4 {
+    width: 150px;
+    height: 50px;
+  }
+  main .section6 .logo .logo5 {
+    width: 150px;
+    height: 40px;
+  }
+  footer .m-ft {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 /*Styles of website*/
@@ -132,13 +192,13 @@ header .header .button .btn2:hover {
   color: #9fabb2;
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 15px;
 }
 
 .section1 h2 {
   color: #4c545d;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 30px;
 }
 
 /*Styles liés à la section 2*/
@@ -146,9 +206,11 @@ header .header .button .btn2:hover {
   padding-bottom: 100px;
 }
 
-.section2 div .img {
-  width: 15px;
-  padding-bottom: 25px;
+.section2 div img {
+  padding-bottom: 35px;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
 .section2 div .infos {
@@ -164,5 +226,232 @@ header .header .button .btn2:hover {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 25px;
+}
+
+/*Styles liés à la section 3*/
+.section3 h2 {
+  color: #4c545d;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 30px;
+}
+
+.section3 p {
+  color: #9fabb2;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+
+.section3 img {
+  padding-bottom: 35px;
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+/*Styles liés à la section 4*/
+.section4 h2 {
+  color: #4c545d;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 30px;
+}
+
+.section4 p {
+  color: #9fabb2;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+/*Styles liés à la section 5*/
+.section5 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section5 h3 {
+  color: #4c545d;
+}
+
+.section5 p {
+  color: #9fabb2;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+/*Styles liés à la section 6*/
+.section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section6 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding-bottom: 150px;
+}
+
+.section6 .logo .logo1 {
+  width: 180px;
+}
+
+.section6 .logo .logo2 {
+  width: 130px;
+}
+
+.section6 .logo .logo3 {
+  width: 150px;
+}
+
+.section6 .logo .logo4 {
+  width: 150px;
+}
+
+.section6 .logo .logo5 {
+  width: 150px;
+}
+
+/*Styles liés à la section 7*/
+.section7 div h2 {
+  color: #4c545d;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  font-size: 30px;
+}
+
+.section7 div p {
+  color: #9fabb2;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+.section7 div .button {
+  padding-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 200px;
+}
+
+.section7 div .button .btn1 {
+  border-radius: 20px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  background-color: #26baa4;
+  border-color: #26baa4;
+  font-size: 14px;
+}
+
+.section7 div .button .btn1:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #26baa4;
+          box-shadow: #26baa4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section7 div .button .btn2 {
+  border-radius: 20px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  background-color: #6173ff;
+  border-color: #6173ff;
+  font-size: 14px;
+}
+
+.section7 div .button .btn2:hover {
+  cursor: pointer;
+  -webkit-box-shadow: #6173ff;
+          box-shadow: #6173ff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*Styles liés au footer*/
+footer {
+  padding-top: 50px;
+  background-color: #e2e1e1;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer div img {
+  width: 50px;
+  padding-bottom: 20px;
+}
+
+footer div p {
+  color: #4c545d;
+  font-size: 18px;
+}
+
+footer div .reseau {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+footer div .reseau .reseau1 {
+  width: 20px;
+}
+
+footer div .reseau .reseau1:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+footer div .reseau .reseau2 {
+  width: 20px;
+}
+
+footer div .reseau .reseau2:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+footer div .reseau .reseau3 {
+  width: 20px;
+}
+
+footer div .reseau .reseau3:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 /*# sourceMappingURL=style.css.map */
